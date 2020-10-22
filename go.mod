@@ -1,4 +1,4 @@
-module github.com/google/ko
+module github.com/cathyzhyi/ko
 
 go 1.14
 
