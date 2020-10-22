@@ -111,7 +111,7 @@ func moduleInfo() (*modules, error) {
 
 	// TODO we read all the output as a single byte array - it may
 	// be possible & more efficient to stream it
-	output, err := exec.Command("go", "list", "-mod=readonly", "-json", "-m", "all").Output()
+	output, err := exec.Command("go", "list", "-mod=vendor", "-json", "-m", "all").Output()
 	if err != nil {
 		return nil, nil
 	}
